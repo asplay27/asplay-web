@@ -1,0 +1,218 @@
+/* Configuraciones base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    /* Fondo espacial oscuro */
+    background-color: #050b14;
+    background-image: radial-gradient(circle at top right, #0f2027, #203a43, #2c5364);
+    background-attachment: fixed;
+    color: #f8fafc;
+    line-height: 1.6;
+}
+
+/* Cabecera Premium */
+.hero {
+    text-align: center;
+    padding: 60px 20px 20px 20px;
+}
+
+/* Nuevo Diseño Premium para el Nombre del Estudio (AHORA SÍ, SOLO EL NOMBRE) */
+.premium-logo {
+    display: inline-block; /* Clave para que el contorno abrace solo el texto */
+    border: 2px solid #10b981; /* Borde verde neón */
+    border-radius: 50px; /* Forma de píldora */
+    padding: 30px 25px;
+    background: rgba(16, 185, 129, 0.05);
+    box-shadow: 0 0 25px rgba(4, 152, 103, 0.4); 
+    margin-bottom: 30px;
+
+    color: #fff;
+    font-size: 3.5rem;
+    font-weight: 800;
+    text-transform: capitalize;
+    letter-spacing: -1px;
+    
+    /* Efecto Neón Radiactivo */
+    text-shadow: 
+        0 0 7px #10b981,    
+        0 0 10px #10b981, 
+        0 0 21px #10b981, 
+        0 0 42px #10b981; 
+}
+
+.logo-icon {
+    font-size: 2.5rem;
+    color: #fff; 
+    vertical-align: middle;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    color: #cbd5e1;
+    margin-bottom: 20px;
+}
+
+/* Nuevo Banner de Publicidad Premium */
+.official-store-banner {
+    display: inline-flex;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(20,30,48,0.8) 0%, rgba(16,185,129,0.15) 100%);
+    border: 1px solid rgba(16, 185, 129, 0.4);
+    padding: 12px 25px;
+    border-radius: 30px;
+    margin-top: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease;
+}
+
+.official-store-banner:hover {
+    transform: scale(1.05);
+    border-color: #10b981;
+}
+
+.store-badge {
+    background-color: #10b981;
+    color: #050b14;
+    font-size: 0.8rem;
+    font-weight: 800;
+    padding: 4px 10px;
+    border-radius: 12px;
+    margin-right: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.official-store-banner p {
+    margin: 0;
+    color: #f8fafc;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+/* Cuadrícula de la Tienda (Grid Mágico) */
+.store-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Efecto Glassmorphism (Tarjetas de Cristal) */
+.glass-card {
+    background: rgba(20, 30, 48, 0.4); 
+    backdrop-filter: blur(12px); 
+    -webkit-backdrop-filter: blur(12px); 
+    border: 1px solid rgba(255, 255, 255, 0.15); 
+    border-radius: 20px;
+    overflow: hidden; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+    border: 1px solid rgba(16, 185, 129, 0.4);
+}
+
+/* Banners dentro de las tarjetas */
+.card-banner {
+    width: 100%;
+    height: 160px;
+    object-fit: cover; 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h2 {
+    font-size: 1.6rem;
+    margin-bottom: 8px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.card-content p {
+    color: #cbd5e1;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+}
+
+.card-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stats {
+    font-size: 0.85rem;
+    color: #94a3b8;
+}
+
+/* Botones de Neón */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.neon-btn-main {
+    background-color: rgba(16, 185, 129, 0.2);
+    border: 1px solid #10b981;
+    box-shadow: 0 0 15px rgba(16, 185, 129, 0.4);
+    font-size: 1.1rem;
+    padding: 12px 25px;
+}
+
+.neon-btn-main:hover {
+    background-color: #10b981;
+    box-shadow: 0 0 25px rgba(16, 185, 129, 0.8);
+}
+
+.neon-btn {
+    background-color: rgba(16, 185, 129, 0.1);
+    border: 1px solid #10b981;
+    box-shadow: 0 0 10px rgba(16, 185, 129, 0.3);
+}
+
+.neon-btn:hover {
+    background-color: #10b981;
+    box-shadow: 0 0 20px rgba(16, 185, 129, 0.6);
+}
+
+.blue-glow {
+    border-color: #3b82f6;
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.3);
+}
+.blue-glow:hover {
+    background-color: #3b82f6;
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.6);
+}
+
+.orange-glow {
+    border-color: #f59e0b;
+    box-shadow: 0 0 10px rgba(245, 158, 11, 0.3);
+}
+.orange-glow:hover {
+    background-color: #f59e0b;
+    box-shadow: 0 0 20px rgba(245, 158, 11, 0.6);
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    margin-top: 20px;
+    color: #64748b;
+    font-size: 0.9rem;
+}
